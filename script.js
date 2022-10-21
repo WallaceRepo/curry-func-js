@@ -15,6 +15,8 @@ const buildSammy = ing1 => ing2 => ing3 => ing4 =>
 `${ing1}, ${ing2}, ${ing3}, ${ing4}`
 console.log(buildSammy("bakon")("tomatoes")("bread")("lettuce"));
 
+// backon, lettuce, bread, tomatoes
+// bakon, tomatoes, bread, lettuce
 // Another example of a curried function for below function
 let log = console.log;
 const multiply = (x,y) => x * y;
@@ -28,6 +30,11 @@ log(curriedMultiply(2));
 const times = curriedMultiply(10)
 log(times)
 log(times(8));
+
+// 6
+// [Function]
+// [Function]
+// 80
 
 // Another exampe
 const  updateElemTxt = id => content => document.querySelector(`#${id}`).textContent = content;
